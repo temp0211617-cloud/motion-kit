@@ -1,18 +1,15 @@
+import { FeaturePreview } from "../signature/FeaturePreview";
 import Link from "next/link";
 import { gestureMetadata } from "@personal/motion-kit/gestures/metadata";
 import { GestureDemo } from "./GestureDemo";
 export default function GesturesPage() {
   return (
     <div className="shell">
-      <header className="site-header">
-        <Link href="/" className="wordmark">
-          MK<span className="caption">Interaction surfaces</span>
-        </Link>
-        <nav aria-label="Documentation">
-          <Link href="/buttons">Buttons</Link>
-          <a href="#reference">Reference</a>
-        </nav>
-      </header>
+      <nav className="page-breadcrumb" aria-label="Breadcrumb">
+        <Link href="/">Motion Kit</Link>
+        <span aria-hidden="true"> / </span>
+        <span>Component documentation</span>
+      </nav>
       <main id="main" tabIndex={-1}>
         <section className="hero">
           <p className="eyebrow">13 / A direct response</p>
@@ -68,6 +65,7 @@ export default function GesturesPage() {
             <code>{`import { Pressable, HoverMagnet, SwipeAction } from "@personal/motion-kit/gestures";\n\n<HoverMagnet><Pressable onClick={mark}>Mark study</Pressable></HoverMagnet>\n<SwipeAction label="Study" actionLabel="Mark study" onAction={mark}>\n  <p>A study to revisit.</p>\n</SwipeAction>`}</code>
           </pre>
         </section>
+        <FeaturePreview standalone />
       </main>
       <footer className="site-footer">Motion Kit / Interaction documentation</footer>
     </div>
