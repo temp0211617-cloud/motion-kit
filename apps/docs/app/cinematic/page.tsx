@@ -1,18 +1,15 @@
+import { FeaturePreview } from "../signature/FeaturePreview";
 import Link from "next/link";
 import { cinematicMetadata } from "@personal/motion-kit/cinematic/metadata";
 import { CinematicDemo } from "./CinematicDemo";
 export default function CinematicPage() {
   return (
     <div className="shell">
-      <header className="site-header">
-        <Link href="/" className="wordmark">
-          MK<span className="caption">Cinematic system</span>
-        </Link>
-        <nav aria-label="Documentation">
-          <Link href="/editorial">Editorial</Link>
-          <a href="#reference">Reference</a>
-        </nav>
-      </header>
+      <nav className="page-breadcrumb" aria-label="Breadcrumb">
+        <Link href="/">Motion Kit</Link>
+        <span aria-hidden="true"> / </span>
+        <span>Component documentation</span>
+      </nav>
       <main id="main" tabIndex={-1}>
         <section className="hero">
           <p className="eyebrow">10 / Space and depth</p>
@@ -85,6 +82,7 @@ export default function CinematicPage() {
             <code>{`import { Curtains } from "@personal/motion-kit/cinematic";\n\n<Curtains replayKey={revision}>\n  <section aria-labelledby="scene-title">\n    <h2 id="scene-title">An opening frame</h2>\n    <a href="/work">Explore work</a>\n  </section>\n</Curtains>`}</code>
           </pre>
         </section>
+        <FeaturePreview standalone />
       </main>
       <footer className="site-footer">Motion Kit / Cinematic documentation</footer>
     </div>
