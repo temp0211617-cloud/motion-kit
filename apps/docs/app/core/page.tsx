@@ -1,3 +1,4 @@
+import { FeaturePreview } from "../signature/FeaturePreview";
 import Link from "next/link";
 import { coreMetadata } from "@personal/motion-kit/core/metadata";
 import { CoreDemo } from "./CoreDemo";
@@ -5,15 +6,11 @@ import { CoreDemo } from "./CoreDemo";
 export default function CorePage() {
   return (
     <div className="shell">
-      <header className="site-header">
-        <Link className="wordmark" href="/">
-          MK<span className="caption">Core primitives / 0.2</span>
-        </Link>
-        <nav aria-label="Documentation">
-          <Link href="/">Foundations</Link>
-          <a href="#core-reference">Reference</a>
-        </nav>
-      </header>
+      <nav className="page-breadcrumb" aria-label="Breadcrumb">
+        <Link href="/">Motion Kit</Link>
+        <span aria-hidden="true"> / </span>
+        <span>Component documentation</span>
+      </nav>
       <main id="main" tabIndex={-1}>
         <section className="hero">
           <p className="eyebrow">02 / The basic vocabulary</p>
@@ -85,6 +82,7 @@ export default function CorePage() {
             route focus at the application level.
           </p>
         </section>
+        <FeaturePreview standalone />
       </main>
       <footer className="site-footer">Motion Kit / Core documentation</footer>
     </div>
