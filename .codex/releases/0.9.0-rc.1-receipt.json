@@ -1,0 +1,20 @@
+{
+  "version": "0.9.0-rc.1",
+  "private": true,
+  "archive": "artifacts/personal-motion-kit-0.9.0-rc.1.tgz",
+  "bytes": 146570,
+  "sha256": "774f51d7f1e8325dbcdfea8f1bdd74d3dd1c98028a7945c75d788ebc9e126e7f",
+  "files": 138,
+  "checks": {
+    "allowlist": true,
+    "declarations": true,
+    "readmeExamples": true,
+    "negativeTypes": true,
+    "offlineInstalledConsumer": true,
+    "serverConditions": true,
+    "clientSSR": true,
+    "treeShaking": true
+  },
+  "localPressableBytes": 3670,
+  "browserScope": "This command verifies package/consumer only; browser results and limitations are recorded in docs/checkpoints.md."
+}

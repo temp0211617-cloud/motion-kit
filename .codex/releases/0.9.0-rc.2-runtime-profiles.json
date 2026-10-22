@@ -1,0 +1,146 @@
+[
+  {
+    "component": "Curtains",
+    "scope": "whole docs page; browser instrumentation, not React renders",
+    "active": {
+      "bounds": 0,
+      "observers": 0,
+      "frames": 22,
+      "longTasks": 0
+    },
+    "reduced": {
+      "bounds": 0,
+      "observers": 0,
+      "frames": 0,
+      "longTasks": 0
+    }
+  },
+  {
+    "component": "DragCarousel",
+    "scope": "whole docs page; browser instrumentation, not React renders",
+    "active": {
+      "bounds": 0,
+      "observers": 0,
+      "frames": 14,
+      "longTasks": 0
+    },
+    "reduced": {
+      "bounds": 0,
+      "observers": 0,
+      "frames": 0,
+      "longTasks": 0
+    }
+  },
+  {
+    "component": "DraggableTicker",
+    "scope": "whole docs page; browser instrumentation, not React renders",
+    "active": {
+      "bounds": 0,
+      "observers": 0,
+      "frames": 39,
+      "longTasks": 0
+    },
+    "reduced": {
+      "bounds": 0,
+      "observers": 0,
+      "frames": 0,
+      "longTasks": 0
+    }
+  },
+  {
+    "component": "EditorialSlider",
+    "scope": "whole docs page; browser instrumentation, not React renders",
+    "active": {
+      "bounds": 0,
+      "observers": 0,
+      "frames": 17,
+      "longTasks": 0
+    },
+    "reduced": {
+      "bounds": 0,
+      "observers": 0,
+      "frames": 0,
+      "longTasks": 0
+    }
+  },
+  {
+    "component": "FilmStrip",
+    "scope": "whole docs page; browser instrumentation, not React renders",
+    "active": {
+      "bounds": 0,
+      "observers": 0,
+      "frames": 15,
+      "longTasks": 0
+    },
+    "reduced": {
+      "bounds": 0,
+      "observers": 0,
+      "frames": 0,
+      "longTasks": 0
+    }
+  },
+  {
+    "component": "LiveTicker",
+    "scope": "whole docs page; browser instrumentation, not React renders",
+    "active": {
+      "bounds": 0,
+      "observers": 0,
+      "frames": 39,
+      "longTasks": 0
+    },
+    "reduced": {
+      "bounds": 0,
+      "observers": 0,
+      "frames": 0,
+      "longTasks": 0
+    }
+  },
+  {
+    "component": "RulerScrollIndicator",
+    "scope": "whole docs page; browser instrumentation, not React renders",
+    "active": {
+      "bounds": 0,
+      "observers": 0,
+      "frames": 30,
+      "longTasks": 0
+    },
+    "reduced": {
+      "bounds": 0,
+      "observers": 0,
+      "frames": 0,
+      "longTasks": 0
+    }
+  },
+  {
+    "component": "RulerTicker",
+    "scope": "whole docs page; browser instrumentation, not React renders",
+    "active": {
+      "bounds": 0,
+      "observers": 0,
+      "frames": 39,
+      "longTasks": 0
+    },
+    "reduced": {
+      "bounds": 0,
+      "observers": 0,
+      "frames": 0,
+      "longTasks": 0
+    }
+  },
+  {
+    "component": "StickyStory",
+    "scope": "whole docs page; browser instrumentation, not React renders",
+    "active": {
+      "bounds": 0,
+      "observers": 0,
+      "frames": 2,
+      "longTasks": 0
+    },
+    "reduced": {
+      "bounds": 0,
+      "observers": 0,
+      "frames": 0,
+      "longTasks": 0
+    }
+  }
+]
