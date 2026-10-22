@@ -1,9 +1,7 @@
 # Current Phase
 
-Authoring extension23 COMPLETE (2026-10-23), local Chromium scope. Prior0–22 recorded scope retained.
+GitHub source synchronization COMPLETE (2026-10-23). Extensions20–23 and Next16.4.2 patch are now uploaded to private temp0211617-cloud/motion-kit, branch main, through the online browser as requested.
 
-/studio: functional six-layer two-keyframe visual editor, playback/scrub/reduction, inspector/presets, undo/redo/save/restore, validated JSON import/export, typed React download/copy. /ai-kit: brief/prompt pack, strict imported scene preview and Studio draft handoff. Optional authenticated local OpenAI adapter implemented; user explicitly deferred provider setup. No live call/charge/verification. Global nav18links; public package153/archive unchanged.
+First downloaded archive at4f89b5946fc60d27ad6596ebf5d086e1284b069f verified300/300expected source paths and SHA256,missing0/extra0/different0. Final sync records/guide are uploaded separately and receive a second ZIP comparison, receipt artifacts/github-sync-final-verification.json. Report docs/github-sync.md. Repo remains private. No Git push/connector, secrets or local build/test artifacts uploaded.
 
-99core+12docs units PASS; full303Chromium PASS. Initial validation-command failure was final package formatting only; corrected. Final build/typecheck/lint/package/performance/security/export/audit gates PASS;21affected browser checks PASS after sizing/spacing refinements. Evidence artifacts/tools-validation.log, tools-final.log and tools-*-complete.log. Audit0,434dependencies unchanged; docs reuse installed Vitest5.0.4. Report docs/studio-ai-kit.md. Final formatting after boundary save.
-
-Production preview session21056 on127.0.0.1:3000, leave running. Extensions20–23/Next16.4.2 remain LOCAL and NOT synchronized to GitHub. Firefox/WebKit host checks remain deferred. Provider configuration/live generation deferred by user choice, not an implementation blocker.
+Authoring extension23 remains complete: /studio functional six-layer editor/typed React+JSON export, /ai-kit prompt/strict imported scene workflow. AI provider setup/live calls deferred by explicit user choice.153package components/rc.2 unchanged. Existing local111units/303Chromium/final21affected checks remain implementation evidence. Hosted CI result is separate; no full-browser or green-CI claim. Local preview session21056 port3000 stays running. Source sync is not public frontend hosting; no new public site URL created.

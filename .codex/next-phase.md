@@ -1,5 +1,5 @@
 # Next Phase
 
-No unfinished implementation in the agreed local Studio and AI Kit workflow. User explicitly selected provider setup later; do not request a key again or claim live generation is verified. Optional setup is documented in docs/studio-ai-kit.md and .env.example. Keep keys server-only and do not enable this local integration on public hosting without account authentication/distributed limits.
+No outstanding source synchronization: extensions20–23 and Next security patch are uploaded to private temp0211617-cloud/motion-kit/main via browser. Full archive readback verifies source; final record receipt artifacts/github-sync-final-verification.json. Guide docs/github-sync.md. Do not repeat the old pending-GitHub claim.
 
-Preview session21056 port3000 should remain running. GitHub synchronization of extensions20–23/Next patch is still pending; user previously requires browser upload. Do not claim synchronization or full Motion+ parity. Earlier Firefox/WebKit host checks remain deferred.
+User explicitly deferred AI provider setup/live generation; do not request credentials again without a new instruction. Existing Firefox/WebKit checks remain deferred. Hosted CI and public frontend hosting are separate from this completed source transfer. Preserve private repository visibility and local production preview session21056 port3000.
