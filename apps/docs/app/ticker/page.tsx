@@ -1,18 +1,15 @@
+import { FeaturePreview } from "../signature/FeaturePreview";
 import Link from "next/link";
 import { tickerMetadata } from "@personal/motion-kit/ticker/metadata";
 import { TickerDemo } from "./TickerDemo";
 export default function TickerPage() {
   return (
     <div className="shell">
-      <header className="site-header">
-        <Link className="wordmark" href="/">
-          MK<span className="caption">Ticker engine</span>
-        </Link>
-        <nav aria-label="Documentation">
-          <Link href="/scroll">Scroll</Link>
-          <a href="#reference">Reference</a>
-        </nav>
-      </header>
+      <nav className="page-breadcrumb" aria-label="Breadcrumb">
+        <Link href="/">Motion Kit</Link>
+        <span aria-hidden="true"> / </span>
+        <span>Component documentation</span>
+      </nav>
       <main id="main" tabIndex={-1}>
         <section className="hero">
           <p className="eyebrow">07 / Continuous rhythm</p>
@@ -88,6 +85,7 @@ export default function TickerPage() {
             <code>{`import { LiveTicker, RulerTicker } from "@personal/motion-kit/ticker";\n\n<LiveTicker label="Studio names" speed={40}>\n  <span>North</span><span>Fieldwork</span>\n</LiveTicker>\n<RulerTicker label="Measured scale" snap count={48} />`}</code>
           </pre>
         </section>
+        <FeaturePreview standalone />
       </main>
       <footer className="site-footer">Motion Kit / Ticker documentation</footer>
     </div>
