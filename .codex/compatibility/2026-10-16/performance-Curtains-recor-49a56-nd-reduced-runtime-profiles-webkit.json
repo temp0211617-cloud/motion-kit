@@ -1,0 +1,16 @@
+{
+  "component": "Curtains",
+  "scope": "whole docs page; browser instrumentation, not React renders",
+  "active": {
+    "bounds": 0,
+    "observers": 0,
+    "frames": 10,
+    "longTasks": 0
+  },
+  "reduced": {
+    "bounds": 0,
+    "observers": 0,
+    "frames": 0,
+    "longTasks": 0
+  }
+}
