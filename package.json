@@ -1,0 +1,33 @@
+{
+  "name": "personal-motion-kit-monorepo",
+  "private": true,
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": ">=24.0.0 <25"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "typecheck": "turbo run typecheck",
+    "lint": "eslint scripts *.mjs && turbo run lint",
+    "test": "turbo run test",
+    "test:e2e": "turbo run test:e2e",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check:package": "node scripts/check-package.mjs",
+    "audit": "pnpm audit --audit-level=low",
+    "validate": "pnpm build && pnpm typecheck && pnpm lint && pnpm test && pnpm check:package && pnpm check:performance && pnpm check:security && pnpm test:e2e && pnpm audit && pnpm format:check",
+    "check:security": "node scripts/check-security.mjs",
+    "check:performance": "node scripts/check-performance.mjs",
+    "validate:chromium": "pnpm build && pnpm typecheck && pnpm lint && pnpm test && pnpm check:package && pnpm check:performance && pnpm check:security && pnpm --filter @personal/motion-kit-docs test:e2e --project=chromium && pnpm audit && pnpm format:check",
+    "check:release": "node scripts/check-release.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "eslint": "10.12.0",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "typescript-eslint": "8.71.2",
+    "prettier": "3.9.10",
+    "turbo": "2.11.7"
+  }
+}
