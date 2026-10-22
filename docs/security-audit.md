@@ -25,3 +25,7 @@ Date: 2026-10-14. Scope: authored runtime/source, docs/assets/fixtures, manifest
 - Dependency audit has no known vulnerabilities. No graphics engines or new runtime dependencies were added.
 
 Final responsive/accessibility/performance/API/docs/distribution audits remain. Artifact packing and consumer tree shaking are checked in later phases; this report does not replace those gates.
+
+## 2026-10-22 security patch
+
+A fresh build-time registry audit identified two critical and one high advisory affecting the former docs dependency Next.js16.4.0. The docs manifest and pnpm lockfile now pin16.4.2, which satisfies the patched range. Peer requirements were reviewed, install scripts remained disabled and frozen-lockfile installation passed. The fresh audit reports zero known vulnerabilities; source/security, production build and full293-Chromium regression gates pass. Evidence: artifacts/signature-audit-final.json and signature-security-upgrade-retry.log. This update is currently local; the earlier private GitHub baseline has not yet been synchronized.
