@@ -1,18 +1,15 @@
+import { FeaturePreview } from "../signature/FeaturePreview";
 import Link from "next/link";
 import { experimentalMetadata } from "@personal/motion-kit/experimental/metadata";
 import { ExperimentalDemo } from "./ExperimentalDemo";
 export default function ExperimentalPage() {
   return (
     <div className="shell">
-      <header className="site-header">
-        <Link href="/" className="wordmark">
-          MK<span className="caption">Experimental accents</span>
-        </Link>
-        <nav aria-label="Documentation">
-          <Link href="/navigation">Navigation</Link>
-          <a href="#reference">Reference</a>
-        </nav>
-      </header>
+      <nav className="page-breadcrumb" aria-label="Breadcrumb">
+        <Link href="/">Motion Kit</Link>
+        <span aria-hidden="true"> / </span>
+        <span>Component documentation</span>
+      </nav>
       <main id="main" tabIndex={-1}>
         <section className="hero">
           <p className="eyebrow">12 / Optional expression</p>
@@ -86,6 +83,7 @@ export default function ExperimentalPage() {
             <code>{`import { ParticleField } from "@personal/motion-kit/experimental";\n\n<ParticleField count={24} replayKey={revision}>\n  <section><h2>A quieter field</h2><p>Readable content.</p></section>\n</ParticleField>`}</code>
           </pre>
         </section>
+        <FeaturePreview standalone />
       </main>
       <footer className="site-footer">Motion Kit / Experimental documentation</footer>
     </div>
