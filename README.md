@@ -1,5 +1,9 @@
 # Motion Kit
 
+Open `/showcase` for the original-artwork 3D gallery (Helix, Barrel, Ring and Sphere), animated statistics and interactive photographic layout preview. Navigation labels animate on hover/focus, with static reduced-motion alternatives. See [the signature showcase notes and artwork prompt](docs/signature-showcase.md).
+
+The docs homepage now includes a searchable 153-component visual catalog and persistent category navigation. Open `/playground` for six interactive advanced studies: shared layouts, springs, perspective decks, layout morphs, SVG drawing, and scroll scenes. See [the showcase upgrade](docs/showcase-upgrade.md).
+
 Private React motion library with 153 implemented components across 12 component categories, plus a Next.js documentation/playground app. TypeScript APIs, Motion for React, shared tokens, keyboard alternatives and live reduced-motion support are included. The package has no bundled runtime dependencies, hidden network calls or telemetry.
 
 Current status:private candidate.141 component metadata entries remain building;12 experimental patterns stay experimental. Chromium is the verified baseline. Additional Firefox/WebKit compatibility is pending; see [known issues](docs/known-issues.md). No stable or universal browser-support claim is made.
@@ -92,8 +96,10 @@ Initial/default props initialize uncontrolled state. Controlled tabs use `value`
 
 ## Verification and status
 
-The latest checkpoints record 99 unit tests and a 260-test Chromium baseline, including delayed-script hydration and native-video playback ownership coverage. All twelve required widths, normal/reduced motion, keyboard/touch behavior, axe and local-only requests are covered. These results describe the checked fixtures, not every possible application composition.
+The latest checkpoints record 111 unit tests and a 303-test Chromium baseline, including delayed-script hydration and native-video playback ownership coverage. All twelve required widths, normal/reduced motion, keyboard/touch behavior, axe and local-only requests are covered. These results describe the checked fixtures, not every possible application composition.
 
 Package checks preserve server/client boundaries, declarations, 153 catalog exports, 20 kB local category budgets and 16 individually bundled consumers. Peer-inclusive bundle costs and signature-component browser profiles are in [the performance audit](docs/performance-audit.md). Security and browser limits are recorded in [security](docs/security-audit.md), [accessibility](docs/accessibility-audit.md), [the browser follow-up](docs/browser-compatibility.md) and [known issues](docs/known-issues.md).
 
 Private candidate `0.9.0-rc.2` is available in `artifacts/`. Run `pnpm check:release` after a successful build to regenerate the archive and verify an isolated installed consumer, including the README examples. The SHA256 and package checks are recorded in `artifacts/release-receipt.json`; see [the candidate report](docs/release-candidate.md) and [phase completion/pending checks](docs/release-plan.md). Phases0–19 are complete for this private scope; unavailable browser/CI verification remains explicitly pending at the user's request. No deployment or public publication occurs as part of development validation. For phase execution, start with [START_HERE.md](START_HERE.md); current state is in `.codex/current-phase.md` and [checkpoints](docs/checkpoints.md).
+
+Authoring tools: [Studio and AI Kit guide](docs/studio-ai-kit.md), with local setup, validation and scope details.

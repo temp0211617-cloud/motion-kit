@@ -16,11 +16,12 @@
     "format:check": "prettier --check .",
     "check:package": "node scripts/check-package.mjs",
     "audit": "pnpm audit --audit-level=low",
-    "validate": "pnpm build && pnpm typecheck && pnpm lint && pnpm test && pnpm check:package && pnpm check:performance && pnpm check:security && pnpm test:e2e && pnpm audit && pnpm format:check",
+    "validate": "pnpm build && pnpm typecheck && pnpm lint && pnpm test && pnpm check:package && pnpm check:performance && pnpm check:security && pnpm check:studio && pnpm test:e2e && pnpm audit && pnpm format:check",
     "check:security": "node scripts/check-security.mjs",
     "check:performance": "node scripts/check-performance.mjs",
-    "validate:chromium": "pnpm build && pnpm typecheck && pnpm lint && pnpm test && pnpm check:package && pnpm check:performance && pnpm check:security && pnpm --filter @personal/motion-kit-docs test:e2e --project=chromium && pnpm audit && pnpm format:check",
-    "check:release": "node scripts/check-release.mjs"
+    "validate:chromium": "pnpm build && pnpm typecheck && pnpm lint && pnpm test && pnpm check:package && pnpm check:performance && pnpm check:security && pnpm check:studio && pnpm --filter @personal/motion-kit-docs test:e2e --project=chromium && pnpm audit && pnpm format:check",
+    "check:release": "node scripts/check-release.mjs",
+    "check:studio": "node scripts/check-studio-export.mjs"
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",
