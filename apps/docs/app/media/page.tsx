@@ -1,18 +1,15 @@
+import { FeaturePreview } from "../signature/FeaturePreview";
 import Link from "next/link";
 import { mediaMetadata } from "@personal/motion-kit/media/metadata";
 import { MediaDemo } from "./MediaDemo";
 export default function MediaPage() {
   return (
     <div className="shell">
-      <header className="site-header">
-        <Link className="wordmark" href="/">
-          MK<span className="caption">Carousel & media</span>
-        </Link>
-        <nav aria-label="Documentation">
-          <Link href="/ticker">Ticker</Link>
-          <a href="#reference">Reference</a>
-        </nav>
-      </header>
+      <nav className="page-breadcrumb" aria-label="Breadcrumb">
+        <Link href="/">Motion Kit</Link>
+        <span aria-hidden="true"> / </span>
+        <span>Component documentation</span>
+      </nav>
       <main id="main" tabIndex={-1}>
         <section className="hero">
           <p className="eyebrow">08 / A collection in focus</p>
@@ -79,6 +76,7 @@ export default function MediaPage() {
             <code>{`import { FilmStrip, BeforeAfterSlider } from "@personal/motion-kit/media";\n\n<FilmStrip label="Project frames" frames={[\n  { id: "first", label: "Observe", thumbnail: <img src="/thumb.webp" alt="" />, media: <img src="/frame.webp" alt="Project sketch" /> }\n]} />\n<BeforeAfterSlider label="Compare" beforeLabel="Original" afterLabel="Revised" before={beforeImage} after={afterImage} />`}</code>
           </pre>
         </section>
+        <FeaturePreview standalone />
       </main>
       <footer className="site-footer">Motion Kit / Media documentation</footer>
     </div>
