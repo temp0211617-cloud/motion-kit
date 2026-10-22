@@ -1,0 +1,157 @@
+{
+  "name": "@personal/motion-kit",
+  "version": "0.9.0-rc.2",
+  "private": true,
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "./editorial": {
+      "types": "./dist/editorial/index.d.ts",
+      "import": "./dist/editorial/index.js"
+    },
+    "./editorial/metadata": {
+      "types": "./dist/editorial/metadata.d.ts",
+      "import": "./dist/editorial/metadata.js"
+    },
+    "./media": {
+      "types": "./dist/media/index.d.ts",
+      "import": "./dist/media/index.js"
+    },
+    "./media/metadata": {
+      "types": "./dist/media/metadata.d.ts",
+      "import": "./dist/media/metadata.js"
+    },
+    "./ticker": {
+      "types": "./dist/ticker/index.d.ts",
+      "import": "./dist/ticker/index.js"
+    },
+    "./ticker/metadata": {
+      "types": "./dist/ticker/metadata.d.ts",
+      "import": "./dist/ticker/metadata.js"
+    },
+    "./scroll": {
+      "types": "./dist/scroll/index.d.ts",
+      "import": "./dist/scroll/index.js"
+    },
+    "./scroll/metadata": {
+      "types": "./dist/scroll/metadata.d.ts",
+      "import": "./dist/scroll/metadata.js"
+    },
+    "./cards": {
+      "types": "./dist/cards/index.d.ts",
+      "import": "./dist/cards/index.js"
+    },
+    "./cards/metadata": {
+      "types": "./dist/cards/metadata.d.ts",
+      "import": "./dist/cards/metadata.js"
+    },
+    "./interactions/metadata": {
+      "types": "./dist/interactions/metadata.d.ts",
+      "import": "./dist/interactions/metadata.js"
+    },
+    "./interactions": {
+      "types": "./dist/interactions/index.d.ts",
+      "import": "./dist/interactions/index.js"
+    },
+    "./text": {
+      "types": "./dist/text/index.d.ts",
+      "import": "./dist/text/index.js"
+    },
+    "./text/metadata": {
+      "types": "./dist/text/metadata.d.ts",
+      "import": "./dist/text/metadata.js"
+    },
+    "./core": {
+      "types": "./dist/core/index.d.ts",
+      "import": "./dist/core/index.js"
+    },
+    "./core/metadata": {
+      "types": "./dist/core/metadata.d.ts",
+      "import": "./dist/core/metadata.js"
+    },
+    "./hooks": {
+      "types": "./dist/hooks/index.d.ts",
+      "import": "./dist/hooks/index.js"
+    },
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./provider": {
+      "types": "./dist/providers/MotionProvider.d.ts",
+      "import": "./dist/providers/MotionProvider.js"
+    },
+    "./tokens": {
+      "types": "./dist/tokens/index.d.ts",
+      "import": "./dist/tokens/index.js"
+    },
+    "./presets": {
+      "types": "./dist/presets/motion-presets.d.ts",
+      "import": "./dist/presets/motion-presets.js"
+    },
+    "./cinematic": {
+      "import": "./dist/cinematic/index.js",
+      "types": "./dist/cinematic/index.d.ts"
+    },
+    "./cinematic/metadata": {
+      "import": "./dist/cinematic/metadata.js",
+      "types": "./dist/cinematic/metadata.d.ts"
+    },
+    "./navigation": {
+      "types": "./dist/navigation/index.d.ts",
+      "import": "./dist/navigation/index.js"
+    },
+    "./navigation/metadata": {
+      "types": "./dist/navigation/metadata.d.ts",
+      "import": "./dist/navigation/metadata.js"
+    },
+    "./experimental": {
+      "types": "./dist/experimental/index.d.ts",
+      "import": "./dist/experimental/index.js"
+    },
+    "./experimental/metadata": {
+      "types": "./dist/experimental/metadata.d.ts",
+      "import": "./dist/experimental/metadata.js"
+    },
+    "./gestures": {
+      "types": "./dist/gestures/index.d.ts",
+      "import": "./dist/gestures/index.js"
+    },
+    "./gestures/metadata": {
+      "types": "./dist/gestures/metadata.d.ts",
+      "import": "./dist/gestures/metadata.js"
+    }
+  },
+  "peerDependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "motion": "^14.1.0"
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@testing-library/react": "16.3.3",
+    "@testing-library/jest-dom": "7.0.1",
+    "jsdom": "30.1.2",
+    "motion": "14.1.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "tsup": "8.5.1",
+    "typescript": "5.9.3",
+    "vitest": "5.0.4"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "license": "UNLICENSED",
+  "description": "Private React motion components with typed APIs and accessible motion alternatives"
+}
