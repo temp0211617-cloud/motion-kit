@@ -1,18 +1,15 @@
+import { FeaturePreview } from "../signature/FeaturePreview";
 import Link from "next/link";
 import { editorialMetadata } from "@personal/motion-kit/editorial/metadata";
 import { EditorialDemo } from "./EditorialDemo";
 export default function EditorialPage() {
   return (
     <div className="shell">
-      <header className="site-header">
-        <Link href="/" className="wordmark">
-          MK<span className="caption">Editorial system</span>
-        </Link>
-        <nav aria-label="Documentation">
-          <Link href="/media">Media</Link>
-          <a href="#reference">Reference</a>
-        </nav>
-      </header>
+      <nav className="page-breadcrumb" aria-label="Breadcrumb">
+        <Link href="/">Motion Kit</Link>
+        <span aria-hidden="true"> / </span>
+        <span>Component documentation</span>
+      </nav>
       <main id="main" tabIndex={-1}>
         <section className="hero">
           <p className="eyebrow">09 / A readable sequence</p>
@@ -85,6 +82,7 @@ export default function EditorialPage() {
             <code>{`import { RulerScrollIndicator } from "@personal/motion-kit/editorial";\n\n<RulerScrollIndicator label="Chapters" sections={[\n  { id: "observe", label: "Observe" }, { id: "compose", label: "Compose" }\n]} />\n<section id="observe">...</section>\n<section id="compose">...</section>`}</code>
           </pre>
         </section>
+        <FeaturePreview standalone />
       </main>
       <footer className="site-footer">Motion Kit / Editorial documentation</footer>
     </div>
