@@ -6,7 +6,7 @@ for (const width of widths) {
   test(`docs shell fits ${width}px`, async ({ page }) => {
     await page.setViewportSize({ width, height: 900 });
     await page.goto("/");
-    await expect(page.getByRole("heading", { name: "Motion Kit", exact: true })).toBeVisible();
+    await expect(page.getByRole("heading", { level: 1, name: /Make interfaces/ })).toBeVisible();
     expect(
       await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth),
     ).toBe(true);

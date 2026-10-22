@@ -42,9 +42,11 @@ test("slider supports keyboard and mouse swipe", async ({ page }) => {
   await image.scrollIntoViewIfNeeded();
   const box = await image.boundingBox();
   if (!box) throw new Error("No slider bounds");
-  await page.mouse.move(box.x + 200, box.y + 50);
+  // Swipe on the image's visible center, clear of the persistent site navigation.
+  const swipeY = box.y + box.height / 2;
+  await page.mouse.move(box.x + 200, swipeY);
   await page.mouse.down();
-  await page.mouse.move(box.x + 80, box.y + 50, { steps: 8 });
+  await page.mouse.move(box.x + 80, swipeY, { steps: 8 });
   await page.mouse.up();
   await expect(page.getByRole("heading", { name: "Space to compose.", exact: true })).toBeVisible();
 });

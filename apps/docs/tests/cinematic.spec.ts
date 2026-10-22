@@ -49,10 +49,12 @@ test("Curtains finishes on live reduction and replay remains static", async ({ p
   await expect
     .poll(() => panel.evaluate((node) => new DOMMatrix(getComputedStyle(node).transform).m11))
     .toBe(0);
-  await Promise.all([
-    curtainOpening(page),
-    page.getByRole("button", { name: "Replay Curtains", exact: true }).click(),
-  ]);
+  // Keep the observed stage visible: scrolling an external control above the sticky
+  // navigation can put an otherwise completed reveal outside its visibility boundary.
+  await page.getByRole("button", { name: "Replay Curtains", exact: true }).focus();
+  await stage.scrollIntoViewIfNeeded();
+  await expect(stage).toBeInViewport();
+  await Promise.all([curtainOpening(page), page.keyboard.press("Enter")]);
   await page.emulateMedia({ reducedMotion: "reduce" });
   await expect
     .poll(() => panel.evaluate((node) => new DOMMatrix(getComputedStyle(node).transform).m11))
