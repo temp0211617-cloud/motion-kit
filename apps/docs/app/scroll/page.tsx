@@ -1,19 +1,15 @@
+import { FeaturePreview } from "../signature/FeaturePreview";
 import Link from "next/link";
 import { scrollMetadata } from "@personal/motion-kit/scroll/metadata";
 import { ScrollDemo } from "./ScrollDemo";
 export default function ScrollPage() {
   return (
     <div className="shell">
-      <header className="site-header">
-        <Link href="/" className="wordmark">
-          MK<span className="caption">Scroll engine</span>
-        </Link>
-        <nav aria-label="Documentation">
-          <Link href="/cards">Cards</Link>
-          <a href="#story">Story</a>
-          <a href="#reference">Reference</a>
-        </nav>
-      </header>
+      <nav className="page-breadcrumb" aria-label="Breadcrumb">
+        <Link href="/">Motion Kit</Link>
+        <span aria-hidden="true"> / </span>
+        <span>Component documentation</span>
+      </nav>
       <main id="main" tabIndex={-1}>
         <section className="hero">
           <p className="eyebrow">06 / Reading in motion</p>
@@ -83,6 +79,7 @@ export default function ScrollPage() {
             <code>{`import { StickyStory } from "@personal/motion-kit/scroll";\n\n<StickyStory label="Project chapters" chapters={[\n  { id: "begin", title: "Begin", body: <p>Chapter content</p>, media: <img src="/frame.webp" alt="Project sketch" /> }\n]} />`}</code>
           </pre>
         </section>
+        <FeaturePreview standalone />
       </main>
       <footer className="site-footer">Motion Kit / Scroll documentation</footer>
     </div>
