@@ -43,7 +43,12 @@ const forbidden = new Set([
   "EventSource",
   "sendBeacon",
 ]);
-const runtimeRoots = ["packages/motion-kit/src/", "apps/docs/app/"];
+const runtimeRoots = [
+  "packages/motion-kit/src/",
+  "apps/docs/app/",
+  "apps/docs/lib/",
+  "apps/docs/server/",
+];
 let inspected = 0;
 function operationName(expression) {
   if (ts.isIdentifier(expression)) return expression.text;
@@ -81,6 +86,12 @@ for (const path of authored) {
   );
   function inspect(node) {
     if (ts.isTypeNode(node)) return;
+    if (
+      ts.isImportDeclaration(node) &&
+      /^(node:)?https?$/.test(node.moduleSpecifier.text) &&
+      name !== "apps/docs/server/ai-provider.ts"
+    )
+      findings.push(`${name}: unreviewed server network import`);
     const location = () =>
       `${name}:${ast.getLineAndCharacterOfPosition(node.getStart(ast)).line + 1}`;
     if (
