@@ -1,0 +1,162 @@
+{
+  "Pressable": {
+    "local": {
+      "bytes": 3670,
+      "gzipBytes": 1783
+    },
+    "withPeers": {
+      "bytes": 138255,
+      "gzipBytes": 46589
+    }
+  },
+  "HoverMagnet": {
+    "local": {
+      "bytes": 4147,
+      "gzipBytes": 1909
+    },
+    "withPeers": {
+      "bytes": 142856,
+      "gzipBytes": 48045
+    }
+  },
+  "DragSurface": {
+    "local": {
+      "bytes": 3955,
+      "gzipBytes": 1875
+    },
+    "withPeers": {
+      "bytes": 150936,
+      "gzipBytes": 51169
+    }
+  },
+  "SwipeAction": {
+    "local": {
+      "bytes": 3008,
+      "gzipBytes": 1515
+    },
+    "withPeers": {
+      "bytes": 137991,
+      "gzipBytes": 46367
+    }
+  },
+  "LongPressMotion": {
+    "local": {
+      "bytes": 4902,
+      "gzipBytes": 2292
+    },
+    "withPeers": {
+      "bytes": 139551,
+      "gzipBytes": 47075
+    }
+  },
+  "LiveTicker": {
+    "local": {
+      "bytes": 7785,
+      "gzipBytes": 3547
+    },
+    "withPeers": {
+      "bytes": 155465,
+      "gzipBytes": 53029
+    }
+  },
+  "DraggableTicker": {
+    "local": {
+      "bytes": 7839,
+      "gzipBytes": 3570
+    },
+    "withPeers": {
+      "bytes": 155526,
+      "gzipBytes": 53058
+    }
+  },
+  "RulerTicker": {
+    "local": {
+      "bytes": 11224,
+      "gzipBytes": 4864
+    },
+    "withPeers": {
+      "bytes": 159123,
+      "gzipBytes": 54415
+    }
+  },
+  "DragCarousel": {
+    "local": {
+      "bytes": 8432,
+      "gzipBytes": 3577
+    },
+    "withPeers": {
+      "bytes": 154595,
+      "gzipBytes": 52490
+    }
+  },
+  "EditorialSlider": {
+    "local": {
+      "bytes": 6988,
+      "gzipBytes": 3227
+    },
+    "withPeers": {
+      "bytes": 157687,
+      "gzipBytes": 53963
+    }
+  },
+  "RulerScrollIndicator": {
+    "local": {
+      "bytes": 6096,
+      "gzipBytes": 2909
+    },
+    "withPeers": {
+      "bytes": 151763,
+      "gzipBytes": 51722
+    }
+  },
+  "StickyStory": {
+    "local": {
+      "bytes": 4418,
+      "gzipBytes": 2121
+    },
+    "withPeers": {
+      "bytes": 146336,
+      "gzipBytes": 49665
+    }
+  },
+  "FilmStrip": {
+    "local": {
+      "bytes": 10539,
+      "gzipBytes": 4398
+    },
+    "withPeers": {
+      "bytes": 156851,
+      "gzipBytes": 53288
+    }
+  },
+  "Curtains": {
+    "local": {
+      "bytes": 3249,
+      "gzipBytes": 1565
+    },
+    "withPeers": {
+      "bytes": 138787,
+      "gzipBytes": 46626
+    }
+  },
+  "MediaRail": {
+    "local": {
+      "bytes": 5568,
+      "gzipBytes": 2365
+    },
+    "withPeers": {
+      "bytes": 14356,
+      "gzipBytes": 5610
+    }
+  },
+  "ReadingProgressRail": {
+    "local": {
+      "bytes": 1846,
+      "gzipBytes": 946
+    },
+    "withPeers": {
+      "bytes": 143454,
+      "gzipBytes": 48535
+    }
+  }
+}
