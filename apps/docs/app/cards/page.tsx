@@ -1,18 +1,15 @@
+import { FeaturePreview } from "../signature/FeaturePreview";
 import Link from "next/link";
 import { cardMetadata } from "@personal/motion-kit/cards/metadata";
 import { CardDemo } from "./CardDemo";
 export default function CardsPage() {
   return (
     <div className="shell">
-      <header className="site-header">
-        <Link className="wordmark" href="/">
-          MK<span className="caption">Cards & surfaces</span>
-        </Link>
-        <nav aria-label="Documentation">
-          <Link href="/buttons">Buttons</Link>
-          <a href="#reference">Reference</a>
-        </nav>
-      </header>
+      <nav className="page-breadcrumb" aria-label="Breadcrumb">
+        <Link href="/">Motion Kit</Link>
+        <span aria-hidden="true"> / </span>
+        <span>Component documentation</span>
+      </nav>
       <main id="main" tabIndex={-1}>
         <section className="hero">
           <p className="eyebrow">05 / Composed surfaces</p>
@@ -76,6 +73,7 @@ export default function CardsPage() {
             <code>{`import { HoverCard, ExpandableCard } from "@personal/motion-kit/cards";\n\n<HoverCard><h2>Project</h2><a href="/project">Explore</a></HoverCard>\n<ExpandableCard summary="More details">Supporting content</ExpandableCard>`}</code>
           </pre>
         </section>
+        <FeaturePreview standalone />
       </main>
       <footer className="site-footer">Motion Kit / Cards documentation</footer>
     </div>
