@@ -1,18 +1,15 @@
+import { FeaturePreview } from "../signature/FeaturePreview";
 import Link from "next/link";
 import { navigationMetadata } from "@personal/motion-kit/navigation/metadata";
 import { NavigationDemo } from "./NavigationDemo";
 export default function NavigationPage() {
   return (
     <div className="shell">
-      <header className="site-header">
-        <Link href="/" className="wordmark">
-          MK<span className="caption">Navigation & overlays</span>
-        </Link>
-        <nav aria-label="Documentation">
-          <Link href="/cinematic">Cinematic</Link>
-          <a href="#reference">Reference</a>
-        </nav>
-      </header>
+      <nav className="page-breadcrumb" aria-label="Breadcrumb">
+        <Link href="/">Motion Kit</Link>
+        <span aria-hidden="true"> / </span>
+        <span>Component documentation</span>
+      </nav>
       <main id="main" tabIndex={-1}>
         <section className="hero">
           <p className="eyebrow">11 / A clear way through</p>
@@ -78,6 +75,7 @@ export default function NavigationPage() {
             <code>{`import { AnimatedModal } from "@personal/motion-kit/navigation";\n\n<AnimatedModal open={open} onOpenChange={setOpen} title="Project details">\n  <label>Project name<input /></label>\n</AnimatedModal>`}</code>
           </pre>
         </section>
+        <FeaturePreview standalone />
       </main>
       <footer className="site-footer">Motion Kit / Navigation documentation</footer>
     </div>
