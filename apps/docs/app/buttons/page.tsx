@@ -1,18 +1,15 @@
+import { FeaturePreview } from "../signature/FeaturePreview";
 import Link from "next/link";
 import { interactionMetadata } from "@personal/motion-kit/interactions/metadata";
 import { ButtonDemo } from "./ButtonDemo";
 export default function ButtonsPage() {
   return (
     <div className="shell">
-      <header className="site-header">
-        <Link className="wordmark" href="/">
-          MK<span className="caption">Buttons & links</span>
-        </Link>
-        <nav aria-label="Documentation">
-          <Link href="/core">Core</Link>
-          <a href="#reference">Reference</a>
-        </nav>
-      </header>
+      <nav className="page-breadcrumb" aria-label="Breadcrumb">
+        <Link href="/">Motion Kit</Link>
+        <span aria-hidden="true"> / </span>
+        <span>Component documentation</span>
+      </nav>
       <main id="main" tabIndex={-1}>
         <section className="hero">
           <p className="eyebrow">04 / Purposeful feedback</p>
@@ -79,6 +76,7 @@ export default function ButtonsPage() {
             <code>{`import { MotionButton, LoadingButton } from "@personal/motion-kit/interactions";\n\n<MotionButton onClick={save}>Save</MotionButton>\n<LoadingButton loading={pending} type="submit">Save draft</LoadingButton>`}</code>
           </pre>
         </section>
+        <FeaturePreview standalone />
       </main>
       <footer className="site-footer">Motion Kit / Buttons documentation</footer>
     </div>
