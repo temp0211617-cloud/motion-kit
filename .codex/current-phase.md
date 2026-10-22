@@ -1,10 +1,9 @@
 # Current Phase
 
-Phase:19 — COMPLETE. All agreed phases0–19 complete for private0.9.0-rc.2, Chromium scope.
-Recommended effort:xhigh.
+Authoring extension23 COMPLETE (2026-10-23), local Chromium scope. Prior0–22 recorded scope retained.
 
-153 implemented components. Full pnpm validate:chromium PASS99units/260browser checks plus build/types/lint/package/catalog/performance/security/audit/format. Final native-video hover ownership bug fixed and covered by two unit/one browser regressions. No API/dependency/budget change. Actual tarball and offline installed consumer PASS.
+/studio: functional six-layer two-keyframe visual editor, playback/scrub/reduction, inspector/presets, undo/redo/save/restore, validated JSON import/export, typed React download/copy. /ai-kit: brief/prompt pack, strict imported scene preview and Studio draft handoff. Optional authenticated local OpenAI adapter implemented; user explicitly deferred provider setup. No live call/charge/verification. Global nav18links; public package153/archive unchanged.
 
-Artifact:artifacts/personal-motion-kit-0.9.0-rc.2.tgz,138files146676bytes. SHA256088826c4e7c02532d8c4bbf619865580be9bab8c94ace5aebf25c2de520c2835; receipt artifacts/release-receipt.json. Originalrc1artifact/receipt preserved. Reports docs/release-candidate.md and docs/release-plan.md (phase completion table/pending registry).
+99core+12docs units PASS; full303Chromium PASS. Initial validation-command failure was final package formatting only; corrected. Final build/typecheck/lint/package/performance/security/export/audit gates PASS;21affected browser checks PASS after sizing/spacing refinements. Evidence artifacts/tools-validation.log, tools-final.log and tools-*-complete.log. Audit0,434dependencies unchanged; docs reuse installed Vitest5.0.4. Report docs/studio-ai-kit.md. Final formatting after boundary save.
 
-Per user's explicit2026-10-16 direction, unavailable Firefox launch/WebKit captures/concurrent touch/fullCI verification remain PENDING and do not block completed phases. Do not repeat host repairs. All full-matrix tests remain enabled; no broad stable claim.141building/12experimental, private:true/UNLICENSED retained. No external publication/upload/CI dispatch.
+Production preview session21056 on127.0.0.1:3000, leave running. Extensions20–23/Next16.4.2 remain LOCAL and NOT synchronized to GitHub. Firefox/WebKit host checks remain deferred. Provider configuration/live generation deferred by user choice, not an implementation blocker.
