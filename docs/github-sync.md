@@ -1,0 +1,11 @@
+# GitHub source synchronization — 2026-10-23
+
+The user requested deployment to the existing private GitHub repository using the online browser. Extensions20–23, original gallery artwork, authoring tools, all corresponding tests/guides and the Next16.4.2 security patch were uploaded through GitHub's file-upload UI to `temp0211617-cloud/motion-kit`, branch `main`. No connector, Git push, shell HTTP upload, credential extraction or repository visibility change was used.
+
+Compared the previously verified265-file baseline with300current nonignored source files:30modified and35new files, grouped into30directory upload commits. The downloaded repository ZIP at commit `4f89b5946fc60d27ad6596ebf5d086e1284b069f` contains all300expected paths and matches every local SHA256. Missing0,extra0,different0. Receipt: `artifacts/github-sync-first-verification.json`. Final sync-status records are committed separately and checked with a second ZIP readback; the final receipt is `artifacts/github-sync-final-verification.json`.
+
+The repository remains private. Provider keys, environment secrets, dependency/build output and local test artifacts are excluded; `.env.example` contains placeholders only. AI provider configuration/live calls remain deferred by explicit user choice. Core catalog153 and private rc.2 archive are unchanged. Local111unit tests/303Chromium checks and final21affected checks remain the implementation validation evidence; no new cross-browser or green hosted-CI claim is made.
+
+This operation synchronizes source into GitHub. The Next.js frontend continues running locally at http://localhost:3000 in production session21056. No public frontend hosting URL was created. The existing GitHub Actions workflow remains enabled, unchanged, and runs on uploaded commits; its separate hosted result does not replace the recorded local validation.
+
+One browser connection failure occurred during a category transition. Reopened the allowed HTTPS repository in the same in-app browser, confirmed the last completed commit, then resumed. The final archive comparison verifies all files, including that interrupted category. Existing user tabs were preserved. Final browser proof: `artifacts/github-sync-proof.png`.
